@@ -64,7 +64,7 @@ Cypress.Commands.add("createPost", (header, body) => {
 //Delete post with provided ID, confirm deletion
 Cypress.Commands.add("deletePostById", (id) => {
   cy.get(General.FeedPage.getPostById(id) + General.FeedPage.Post.X_postOptions).click()
-  cy.get(General.FeedPage.Post.postDeleteButton).first().click()
+  cy.get(General.FeedPage.Post.postDeleteButton).click()
   cy.on('window:confirm', () => true);
 });
 
