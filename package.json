@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "e2e:chrome-headed": "cypress run --headed --browser chrome",
+    "e2e:chrome": "cypress run --browser chrome",
+    "cy:open": "cypress open"
+  },
+  "devDependencies": {
+    "cypress": "^14.0.2",
+    "cypress-real-events": "^1.14.0"
+  }
+}

@@ -1,0 +1,19 @@
+Dependency installation:
+- npm install
+
+Run:
+- headless: npm run e2e:chrome
+- headed: npm run e2e:chrome-headed
+- open cypress: npm run cy:open
+
+test expects file cypress.env.json to exist in root of project:
+{
+    "EMAIL": "lorem",
+    "PASSWORD": "ipsum",
+    "COMMUNITY": "dolor",
+    "POST_BODY": "sit"
+}
+
+-replace values appropriatelly
+-file is not versioned for obvious reasons
+
